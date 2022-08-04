@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  body: MyString
+  option1: MyString
+  option2: 
+  option3: MyString
+  option4: 
+  answer: MyString
+  reference: 
+
+two:
+  body: MyString
+  option1: MyString
+  option2: 
+  option3: MyString
+  option4: 
+  answer: MyString
+  reference: 
