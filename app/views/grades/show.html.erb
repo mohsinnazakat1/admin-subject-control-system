@@ -1,0 +1,12 @@
+<h1><%= @grade.title %></h1>
+<ul>
+  <li><%= link_to "Edit", edit_article_path(@grade) %></li>
+  <li><%= link_to 'Destroy', article_path(@grade),
+              method: :delete,
+              data: { confirm: 'Are you sure?' 
+                  } %></li>
+</ul>
+
+
+<%= link_to "Home", grades_path%>
+

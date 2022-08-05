@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root to: "home#index"
-  get 'home/index'
+  resources :grades
   # devise_for :users
   devise_for :users do
     get '/users/sign_out' => 'devise/sessions#destroy'
