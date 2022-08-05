@@ -2,8 +2,8 @@
 
 one:
   title: MyString
-  reference: 
+  subject: one
 
 two:
   title: MyString
-  reference: 
+  subject: two

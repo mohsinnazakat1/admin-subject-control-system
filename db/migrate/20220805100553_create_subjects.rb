@@ -1,9 +1,8 @@
 class CreateSubjects < ActiveRecord::Migration[6.1]
   def change
-    debugger
     create_table :subjects do |t|
       t.string :title
-      t.references :grade
+      t.references :grade, null: false, foreign_key: true
 
       t.timestamps
     end

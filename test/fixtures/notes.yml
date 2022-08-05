@@ -3,9 +3,9 @@
 one:
   title: MyString
   body: MyString
-  reference: 
+  chapter: one
 
 two:
   title: MyString
   body: MyString
-  reference: 
+  chapter: two

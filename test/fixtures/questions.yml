@@ -3,17 +3,17 @@
 one:
   body: MyString
   option1: MyString
-  option2: 
+  option2: MyString
   option3: MyString
-  option4: 
+  option4: MyString
   answer: MyString
-  reference: 
+  quiz: one
 
 two:
   body: MyString
   option1: MyString
-  option2: 
+  option2: MyString
   option3: MyString
-  option4: 
+  option4: MyString
   answer: MyString
-  reference: 
+  quiz: two

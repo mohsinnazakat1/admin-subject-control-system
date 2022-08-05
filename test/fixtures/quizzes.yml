@@ -2,8 +2,8 @@
 
 one:
   title: MyString
-  reference: 
+  chapter: one
 
 two:
   title: MyString
-  reference: 
+  chapter: two
