@@ -1,0 +1,17 @@
+<%= form_with model: @subject do |form| %>
+  <div>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+    <br>
+    <%= form.label :grade %><br>
+    <%= form.select :grade_id, Grade.all.map{ |g| [g.title , g.id] } %>
+    <% @subject.errors.full_messages_for(:title).each do |message| %>
+    
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

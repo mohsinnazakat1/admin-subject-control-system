@@ -1,0 +1,11 @@
+<h1><%= @subject.title %></h1>
+<ul>
+  <li><%= link_to "Edit", edit_subject_path(@subject) %></li>
+  <li><%= link_to 'Destroy', subject_path(@subject),
+              method: :delete,
+              data: { confirm: 'Are you sure?' 
+                  } %></li>
+</ul>
+
+<%= link_to "List of All Subjects", subjects_path%>
+

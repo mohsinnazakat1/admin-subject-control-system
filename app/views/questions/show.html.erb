@@ -1,0 +1,16 @@
+<ul>
+  <li><%= link_to "Edit", edit_question_path(@question) %></li>
+  <li><%= link_to 'Destroy', question_path(@question),
+              method: :delete,
+              data: { confirm: 'Are you sure?' 
+                  } %></li>
+</ul>
+
+<h1> Question <%= @question.body %> </h1>
+<h2> option1: <%= @question.option1 %> </h2>
+<h2> option2: <%= @question.option2 %> </h2>
+<h2> option3: <%= @question.option3 %> </h2>
+<h2> option4: <%= @question.option4 %> </h2>
+<h2> answer: <%= @question.answer %> </h2>
+
+<%= link_to "All Questions", questions_path %>

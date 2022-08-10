@@ -1,0 +1,12 @@
+<ul>
+  <li><%= link_to "Edit", edit_quiz_path(@quiz) %></li>
+  <li><%= link_to 'Destroy', quiz_path(@quiz),
+              method: :delete,
+              data: { confirm: 'Are you sure?' 
+                  } %></li>
+</ul>
+
+<h1> <%= @quiz.title %> </h1>
+
+
+<%= link_to "All Quizzes", quizzes_path %>

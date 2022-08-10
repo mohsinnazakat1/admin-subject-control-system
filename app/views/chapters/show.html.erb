@@ -1,0 +1,11 @@
+<h1><%= @chapter.title %></h1>
+<ul>
+  <li><%= link_to "Edit", edit_chapter_path(@chapter) %></li>
+  <li><%= link_to 'Destroy', chapter_path(@chapter),
+              method: :delete,
+              data: { confirm: 'Are you sure?' 
+                  } %></li>
+</ul>
+
+<%= link_to "All Chapters", chapters_path%>
+

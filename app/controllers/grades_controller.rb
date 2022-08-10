@@ -43,11 +43,8 @@ class GradesController < ApplicationController
   end
 
   private
-  def grade_params
-    params.require(:grade).permit(:title)
-  end
-
-
-
+    def grade_params
+      params.require(:grade).permit(:title)
+    end
 
 end

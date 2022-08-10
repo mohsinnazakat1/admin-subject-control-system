@@ -1,0 +1,16 @@
+  <%= form_with model: @chapter do |form| %>
+  <div>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+    <br>
+    <%= form.select :subject_id, Subject.all.map{ |s| [s.title , s.id] } %>
+    <% @chapter.errors.full_messages_for(:title).each do |message| %>
+    
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
