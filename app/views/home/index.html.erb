@@ -1,11 +1,71 @@
-<div style = "position:relative; left:40%;"> 
-<h1> Welcome to LMS </h1>
+<div class="row">
 
-<%= link_to "Grades", grades_path %> <br>
-<%= link_to "Subjects", subjects_path %> <br>
-<%= link_to "Chapters", chapters_path %> <br>
-<%= link_to "Notes", notes_path %> <br>
-<%= link_to "Quizzes", quizzes_path %> <br>
-<%= link_to "Questions", questions_path %> <br>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Grades</h5>
+        <p class="card-text"> Explore the Grades also create, update, delete them</p>
+        <%= link_to "Grades", grades_path, class: "btn btn-primary"%> 
+      </div>
+    </div>
+  </div>
 
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Subjects</h5>
+        <p class="card-text">Explore the Subjects also create, update, delete them</p>
+        <%= link_to "Subjects", subjects_path, class: "btn btn-primary"%> 
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row">
+
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Chapters</h5>
+        <p class="card-text">Explore the Chapters also create, update, delete them</p>
+        <%= link_to "Chapters", chapters_path , class: "btn btn-primary"%> <br>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Notes</h5>
+        <p class="card-text"> Explore the Notes also create, update, delete them </p>
+        <%= link_to "Notes", notes_path , class: "btn btn-primary"%>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<div class="row">
+
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Quizzes</h5>
+        <p class="card-text"> Explore the Quizzes also create, update, delete them</p>
+        <%= link_to "Quizzes", quizzes_path , class: "btn btn-primary"%>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Questions</h5>
+        <p class="card-text"> Explore the Questions also create, update, delete them </p>
+        <%= link_to "Questions", questions_path , class: "btn btn-primary"%>
+      </div>
+    </div>
+  </div>
+  
 </div>
