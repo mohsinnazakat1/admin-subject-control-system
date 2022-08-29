@@ -12,12 +12,8 @@
   </head>
 
   <body>
-    <div style = "position:relative; left:50%;  " >
       <% if user_signed_in? %>
-      <li class="nav-item active">
-        <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-      </li>
-    </div>
+      <%= render "shared/signout" %>
     <% end %>
     <%= yield %>
 
